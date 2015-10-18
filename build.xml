@@ -1,7 +1,10 @@
-<project name="dita-to-pdf-with-eclipse" default="debrief-to-PDF" basedir=".">
+<project name="dita-to-pdf-with-eclipse" default="TransformAll" basedir=".">
 	
 	<property name="debrief.output.dir" value="output${file.separator}debrief${file.separator}"/>
 	<property name="infosvg.output.dir" value="output${file.separator}infosvg${file.separator}"/>
+	<property name="sample.output.dir" value="output${file.separator}sample${file.separator}"/>
+	
+
 	
 	<property name="lib.dir" value="libs${file.separator}"/>
 	
@@ -13,12 +16,16 @@
 	<property name="infosvg-dita-input" value="dita-test-files${file.separator}infosvg${file.separator}"/>
 	-->	
 
+	<property name="sample-taskbook-dita-input" value="${dita-ot.dir}${file.separator}samples${file.separator}taskbook.ditamap"/>	
+	<property name="sample-sequence-dita-input" value="${dita-ot.dir}${file.separator}samples${file.separator}sequence.ditamap"/>
+	<property name="sample-heirarchy-dita-input" value="${dita-ot.dir}${file.separator}samples${file.separator}hierarchy.ditamap"/>
+	
 	<property name="debrief.input.ditamap" value="${debrief-dita-input}map.ditamap"/>
 	
 	<property name="dita.build.file" value="${dita-ot.dir}${file.separator}build.xml"/>
 
 	<target name="debrief-to-PDF">
-		<!-- run the Debrief Ditamap (and 4 sub task files) through DITA-OT to produce the Debrief PDF -->
+		<!-- run the Debrief Ditamap (and 4 sub task files) through DITA-OT using info.debrief custom plugin to produce the Debrief PDF -->
 		<ant antfile="${dita.build.file}">
 		  <property name="args.input" location="${debrief.input.ditamap}"/>
 		  <property name="output.dir" location="${debrief.output.dir}pdf"/>
@@ -26,16 +33,47 @@
 		</ant>
 	</target>
 	
-	<!--
+	<target name="sample-taskbook-to-PDF">
+		<!-- run the DITA-OT samples taskbook ditamap through DITA-OT with a sample plugin to produce a sample PDF -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${sample-taskbook-dita-input}"/>
+		  <property name="output.dir" location="${sample.output.dir}pdf"/>
+		  <property name="transtype" value="sample"/>
+		</ant>
+	</target>
 	
-	<target name="debrief-to-PDF">
-			
-			<ant antfile="${dita.build.file}">
-			  <property name="args.input" location="${debrief.output.ditamap}"/>
-			  <property name="output.dir" location="${debrief.output.dir.sep}pdf"/>
-			  <property name="transtype" value="debrief"/>
-			</ant>
-		</target>
+	<target name="sample-sequence-to-PDF">
+		<!-- run the DITA-OT samples sequence ditamap through DITA-OT with a sample plugin to produce a sample PDF -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${sample-sequence-dita-input}"/>
+		  <property name="output.dir" location="${sample.output.dir}pdf"/>
+		  <property name="transtype" value="sample"/>
+		</ant>
+	</target>
+	
+	<target name="sample-hierarchy-to-PDF">
+		<!-- run the DITA-OT samples hierarchy ditamap through DITA-OT with a sample plugin to produce a sample PDF -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${sample-heirarchy-dita-input}"/>
+		  <property name="output.dir" location="${sample.output.dir}pdf"/>
+		  <property name="transtype" value="sample"/>
+		</ant>
+	</target>
+	
+	
+	
+	<!--		
+		<target name="infosvg-to-PDF">
+				
+				<ant antfile="${dita.build.file}">
+				  <property name="args.input" location="${infosvg-dita-input}"/>
+				  <property name="output.dir" location="${infosvg.output.dir}pdf"/>
+				  <property name="transtype" value="infosvg"/>
+				</ant>
+			</target>
 	-->
+	
+	<target name="TransformAll" depends="debrief-to-PDF, sample-taskbook-to-PDF, sample-sequence-to-PDF, sample-hierarchy-to-PDF"/>	
+		
 	
 </project>

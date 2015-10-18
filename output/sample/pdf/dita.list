@@ -1,9 +1,9 @@
-#Sun Oct 18 18:35:38 AEST 2015
+#Sun Oct 18 18:35:50 AEST 2015
 relflagimagelist=
-user.input.dir=/Users/beast/GitHub/dita-to-pdf-with-eclipse/dita-test-files/debrief
+user.input.dir=/Users/beast/GitHub/dita-to-pdf-with-eclipse/libs/DITA-OT1.8.5/samples
 copytotarget2sourcemaplist=
 uplevels=
-user.input.file=map.ditamap
+user.input.file=hierarchy.ditamap
 user.input.file.listfile=usr.input.file.list
 tempdirToinputmapdir.relative.value=
 relflagimagefile=relflagimage.list
