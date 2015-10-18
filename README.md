@@ -1,13 +1,15 @@
 # DITA TO PDF WITH ECLIPSE
 This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XSL and XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
-This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin using Apache Ant.  Using PDF allows us to print a nicely formated document on paper. Using Eclipse generating the PDF can be done in one click by building the project.
+This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin using Apache Ant.  Using PDF allows us to print a nicely formated documents on paper. Using Eclipse generating the PDF output can be done in one click by building the project and this creates a publishing pipeline making all the different PDF's one after the other.
 
 Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the OASIS DITA Technical Committee.
 
-The Roadmap for this project is to make this into an easy to follow tutorial on how to build DITA-OT PDF plugins and publish your DITA content using Eclipse.
+The Roadmap for this project is to make this into an easy to follow tutorial on how to build and customize DITA-OT PDF plugins and publish your DITA content using Eclipse.  There maybe an attempt at building DITA-OT PDF plugins using newer versions of DITA-OT. 
 
-The current 'info.debrief' plugin has been extracted from another open source project I worked on. The other 'sample' plugin is a vanilla plugin that i created online on a DITA-OT plugin customization site.
+The 'info.debrief' plugin has been extracted from another open source project I worked on. The other 'sample' plugin is a vanilla plugin that i created online on a DITA-OT plugin customization site.  
+
+I should be adding more samples soon.
 
 
 Project Set Up, Build and Run.
@@ -95,6 +97,8 @@ Homebrew — The missing package manager for OS X - http://brew.sh/
 Install Ant with Homebrew - http://brewformulas.org/Ant
 
 Installing Apache Ant - http://ant.apache.org/manual/install.html
+
+Codecademy - Learn the Command Line - https://www.codecademy.com/courses/learn-the-command-line
 
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
 
