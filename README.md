@@ -1,11 +1,11 @@
 # dita-to-pdf
 This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
-This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin.  Using PDF allows us to print a nicely formated document on paper. 
+This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin using Apache Ant.  Using PDF allows us to print a nicely formated document on paper. Using Eclipse generating the PDF can be done in one click by building the project.
 
 Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the OASIS DITA Technical Committee.
 
-The Roadmap for this project is make this into an easy to follow tutorial on how to build DITA-OT PDF plugins and publish your DITA content.
+The Roadmap for this project is make this into an easy to follow tutorial on how to build DITA-OT PDF plugins and publish your DITA content using Eclipse
 
 I will be attempting to create a second vanilla DITA-OT plugin from some sample DITA files.  The current 'info.debrief' plugin has been extracted from another open source project I worked on.
 
@@ -19,12 +19,13 @@ Project Set Up, Build and Run.
 	- Select 'Java Project' click next
 	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
 	- Un-check location checkbox and enter in the parent folder of the project. In project layout select -> 'Use project folder as root for sources and class files' radio button and then click next.
-	- You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
+	- You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
 	
 2.  - Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 	- This should run and build and the final resulting PDF should be called map.pdf and located in the 'output/debrief/pdf' folder.
-	 This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
-	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
+	- Transformation and rendering (printing) occur in this step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
+	- I used Apache FOP 2.0 for the FO Processor, DITA-OT 1.8.5 and SaxonHE9-6-0-7J from Saxonica as the transformation engine 
+
 	
 
 How DITA-OT PDF Plugins work:
