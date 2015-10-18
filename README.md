@@ -1,4 +1,4 @@
-# dita-to-pdf
+# DITA TO PDF WITH ECLIPSE
 This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XSL and XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
 This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin using Apache Ant.  Using PDF allows us to print a nicely formated document on paper. Using Eclipse generating the PDF can be done in one click by building the project.
