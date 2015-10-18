@@ -1,2 +1,94 @@
 # dita-to-pdf
-Takes some DITA XML and transforms it to PDF with the DITA Open Toolkit and Eclipse through Apache Ant
+This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
+
+This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin.  Using PDF allows us to print a nicely formated document on paper. 
+
+Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the OASIS DITA Technical Committee.
+
+The Roadmap for this project is make this into an easy to follow tutorial on how to build DITA-OT PDF plugins and publish your DITA content.
+
+I will be attempting to create a second vanilla DITA-OT plugin from some sample DITA files.  The current 'info.debrief' plugin has been extracted from another open source project I worked on.
+
+
+Project Set Up, Build and Run.
+
+1. 	- Download Eclipse Mars at https://eclipse.org/downloads/ and install and then open.	
+	- Clone Git repo
+	- Switch your Eclipse workspace to the parent of the folder you cloned into
+	- Then go -> File -> New -> Project
+	- Select 'Java Project' click next
+	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
+	- Un-check location checkbox and enter in the parent folder of the project. In project layout select -> 'Use project folder as root for sources and class files' radio button and then click next.
+	- You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
+	
+2.  - Right click on build.xml and select -> Run As -> Ant Build -> (first one)
+	- This should run and build and the final resulting PDF should be called map.pdf and located in the 'output/debrief/pdf' folder.
+	 This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
+	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
+	
+
+How DITA-OT PDF Plugins work:
+
+Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
+
+When ready a plugin must be integrated into DITA-OT using Apache Ant. 
+ 
+On the command line from inside the root DITA-OT folder it would be -> ant -f integrator.xml
+
+Every plugin has a 'transtype' -> this plugins transtype is 'debrief'
+
+PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
+DITA-OT provides that base XSL code that you 'override' with your custom work.
+
+The two main files that configure plugins are plugin.xml and integrator.xml which should be in the root of the plugin folder.  The 'cfg' folder contains the rest of the customization.
+
+Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory. 
+ 
+Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
+
+	
+Eclipse - https://eclipse.org/ 
+
+Apache FOP - https://xmlgraphics.apache.org/fop/
+
+Apache ANT - http://ant.apache.org
+
+Saxon - http://saxon.sourceforge.net/
+
+Saxonica - http://www.saxonica.com/welcome/welcome.xml
+
+DITA - https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture
+
+DITA-Open Toolkit - http://www.dita-ot.org/
+
+W3C - The Extensible Stylesheet Language Family (XSL) - http://www.w3.org/Style/XSL/
+
+W3C XSLT 2.0 - http://www.w3.org/TR/xslt20/ 
+
+XSL Formatting Objects - https://en.wikipedia.org/wiki/XSL_Formatting_Objects
+
+XSL-FO Processors - http://www.w3.org/community/ppl/wiki/XSL-FO_Processors
+
+XML - https://en.wikipedia.org/wiki/XML
+
+Adobe PDF - https://en.wikipedia.org/wiki/Portable_Document_Format
+
+The Organization for the Advancement of Structured Information Standards (OASIS) - https://en.wikipedia.org/wiki/OASIS_(organization)
+
+oXygen XML Editor - http://www.oxygenxml.com
+
+DITA-OT installing plugins - http://dita-ot.sourceforge.net/1.7/dev_ref/plugins-installing.html
+
+Generate sample DITA-OT plugin - https://dita-generator-hrd.appspot.com/pdf-plugin/
+
+Creating DITA-OT plugins - http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-overview.html
+
+Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html
+
+XSLT FAQ. Docbook FAQ. Braille. - http://www.dpawson.co.uk/
+
+Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
+
+Ruby regular expression editor - http://rubular.com/
+
+Essential programmer training - http://www.codewars.com/
