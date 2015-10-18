@@ -92,6 +92,10 @@ XSLT FAQ. Docbook FAQ. Braille. - http://www.dpawson.co.uk/
 
 Homebrew — The missing package manager for OS X - http://brew.sh/
 
+Install Ant with Homebrew - http://brewformulas.org/Ant
+
+Installing Apache Ant - http://ant.apache.org/manual/install.html
+
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
 
 Ruby regular expression editor - http://rubular.com/
