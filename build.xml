@@ -1,0 +1,41 @@
+<project name="dita-to-pdf-with-eclipse" default="debrief-to-PDF" basedir=".">
+	
+	<property name="debrief.output.dir" value="output${file.separator}debrief${file.separator}"/>
+	<property name="infosvg.output.dir" value="output${file.separator}infosvg${file.separator}"/>
+	
+	<property name="lib.dir" value="libs${file.separator}"/>
+	
+	<property name="dita-ot.dir" value="${lib.dir}DITA-OT1.8.5"/>
+	
+	<property name="debrief-dita-input" value="dita-test-files${file.separator}debrief${file.separator}"/>
+	
+	<!--
+	<property name="infosvg-dita-input" value="dita-test-files${file.separator}infosvg${file.separator}"/>
+	-->	
+
+	<property name="debrief.input.ditamap" value="${debrief-dita-input}map.ditamap"/>
+	
+	<property name="dita.build.file" value="${dita-ot.dir}${file.separator}build.xml"/>
+
+	<target name="debrief-to-PDF">
+		<!-- run the Debrief Ditamap (and 4 sub task files) through DITA-OT to produce the Debrief PDF -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${debrief.input.ditamap}"/>
+		  <property name="output.dir" location="${debrief.output.dir}pdf"/>
+		  <property name="transtype" value="debrief"/>
+		</ant>
+	</target>
+	
+	<!--
+	
+	<target name="debrief-to-PDF">
+			
+			<ant antfile="${dita.build.file}">
+			  <property name="args.input" location="${debrief.output.ditamap}"/>
+			  <property name="output.dir" location="${debrief.output.dir.sep}pdf"/>
+			  <property name="transtype" value="debrief"/>
+			</ant>
+		</target>
+	-->
+	
+</project>
