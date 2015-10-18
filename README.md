@@ -7,7 +7,7 @@ Darwin Information Typing Architecture (DITA) is an XML data model for authoring
 
 The Roadmap for this project is to make this into an easy to follow tutorial on how to build DITA-OT PDF plugins and publish your DITA content using Eclipse.
 
-I will be attempting to create a second vanilla DITA-OT plugin from some sample DITA files.  The current 'info.debrief' plugin has been extracted from another open source project I worked on.
+The current 'info.debrief' plugin has been extracted from another open source project I worked on. The other 'sample' plugin is a vanilla plugin that i created online on a DITA-OT plugin customization site.
 
 
 Project Set Up, Build and Run.
@@ -32,9 +32,11 @@ How DITA-OT PDF Plugins work:
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
 
-When ready a plugin must be integrated into DITA-OT using Apache Ant. 
+When ready a plugin must be integrated into DITA-OT using Apache Ant. I built this project using OS X and I installed Ant through Homebrew. 
  
-On the command line from inside the root DITA-OT folder it would be -> ant -f integrator.xml
+To integrate a new plugin on the command line from inside the root DITA-OT folder it would be -> ant -f integrator.xml
+
+You can also run the integrator inside Eclipse as an Ant build by right clicking on '/libs/DITA-OT1.8.5/integrator.xml' and selecting -> Run As -> Ant Build and this should integrate the plugin with the toolkit.
 
 Every plugin has a 'transtype' -> this plugins transtype is 'debrief'
 
@@ -87,6 +89,8 @@ Creating DITA-OT plugins - http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-
 Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html
 
 XSLT FAQ. Docbook FAQ. Braille. - http://www.dpawson.co.uk/
+
+Homebrew — The missing package manager for OS X - http://brew.sh/
 
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
 
