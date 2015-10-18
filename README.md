@@ -1,11 +1,11 @@
 # dita-to-pdf
-This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
+This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XSL and XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
 This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin using Apache Ant.  Using PDF allows us to print a nicely formated document on paper. Using Eclipse generating the PDF can be done in one click by building the project.
 
 Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the OASIS DITA Technical Committee.
 
-The Roadmap for this project is make this into an easy to follow tutorial on how to build DITA-OT PDF plugins and publish your DITA content using Eclipse
+The Roadmap for this project is to make this into an easy to follow tutorial on how to build DITA-OT PDF plugins and publish your DITA content using Eclipse.
 
 I will be attempting to create a second vanilla DITA-OT plugin from some sample DITA files.  The current 'info.debrief' plugin has been extracted from another open source project I worked on.
 
