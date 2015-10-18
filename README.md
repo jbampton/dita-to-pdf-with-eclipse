@@ -30,7 +30,7 @@ Project Set Up, Build and Run.
 
 How DITA-OT PDF Plugins work:
 
-Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
+Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief' and the auto built vanilla plugin named 'sample'.
 
 When ready a plugin must be integrated into DITA-OT using Apache Ant. I built this project using OS X and I installed Ant through Homebrew. 
  
@@ -38,7 +38,7 @@ To integrate a new plugin on the command line from inside the root DITA-OT folde
 
 You can also run the integrator inside Eclipse as an Ant build by right clicking on '/libs/DITA-OT1.8.5/integrator.xml' and selecting -> Run As -> Ant Build and this should integrate the plugin with the toolkit.
 
-Every plugin has a 'transtype' -> this plugins transtype is 'debrief'
+Every plugin has a 'transtype' -> the two transtype's are 'debrief' and 'sample'
 
 PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
 DITA-OT provides that base XSL code that you 'override' with your custom work.
