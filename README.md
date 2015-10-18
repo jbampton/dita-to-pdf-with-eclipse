@@ -17,7 +17,7 @@ Project Set Up, Build and Run.
 	- Switch your Eclipse workspace to the parent of the folder you cloned into
 	- Then go -> File -> New -> Project
 	- Select 'Java Project' click next
-	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
+	- Enter 'dita-to-pdf-with-eclipse' in the Project Name field
 	- Un-check location checkbox and enter in the parent folder of the project. In project layout select -> 'Use project folder as root for sources and class files' radio button and then click next.
 	- You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
 	
