@@ -2,7 +2,7 @@
 	
 	<property name="debrief.output.dir" value="output${file.separator}debrief${file.separator}"/>
 	<property name="infosvg.output.dir" value="output${file.separator}infosvg${file.separator}"/>
-	<property name="sample.output.dir" value="output${file.separator}sample${file.separator}"/>
+	<property name="sample.output.dir" value="output${file.separator}samples${file.separator}"/>
 	
 
 	
