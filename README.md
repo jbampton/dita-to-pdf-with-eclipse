@@ -12,7 +12,7 @@ The 'info.debrief' plugin has been extracted from another open source project I 
 I should be adding more samples soon.
 
 
-##Project Set Up, Build and Run.
+##Project Set Up, Build and Run
 
 1. 	- Download Eclipse Mars at https://eclipse.org/downloads/ and install and then open.	
 	- Clone Git repo
@@ -31,7 +31,7 @@ I should be adding more samples soon.
 
 	
 
-##How DITA-OT PDF Plugins work:
+##How DITA-OT PDF Plugins work
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief' and the auto built vanilla plugin named 'sample'.
 
