@@ -12,7 +12,7 @@ The 'info.debrief' plugin has been extracted from another open source project I 
 I should be adding more samples soon.
 
 
-Project Set Up, Build and Run.
+##Project Set Up, Build and Run.
 
 1. 	- Download Eclipse Mars at https://eclipse.org/downloads/ and install and then open.	
 	- Clone Git repo
@@ -31,7 +31,7 @@ Project Set Up, Build and Run.
 
 	
 
-How DITA-OT PDF Plugins work:
+##How DITA-OT PDF Plugins work:
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief' and the auto built vanilla plugin named 'sample'.
 
@@ -106,3 +106,7 @@ Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/
 Ruby regular expression editor - http://rubular.com/
 
 Essential programmer training - http://www.codewars.com/
+
+Mastering Markdown - https://guides.github.com/features/mastering-markdown/
+
+GitHub Desktop - https://desktop.github.com/
