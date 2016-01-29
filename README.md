@@ -91,6 +91,8 @@ Placing the custom code only in these two files follows best practice techniques
 	
 Eclipse - https://eclipse.org/ 
 
+The Apache Software Foundation - http://www.apache.org/
+
 Apache FOP - https://xmlgraphics.apache.org/fop/
 
 Apache ANT - http://ant.apache.org
@@ -98,6 +100,8 @@ Apache ANT - http://ant.apache.org
 Saxon - http://saxon.sourceforge.net/
 
 Saxonica - http://www.saxonica.com/welcome/welcome.xml
+
+Online community for the Darwin Information Typing Architecture OASIS Standard - http://dita.xml.org/
 
 DITA - https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture
 
