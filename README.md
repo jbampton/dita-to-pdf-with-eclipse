@@ -14,20 +14,53 @@ I should be adding more samples soon.
 
 ##Project Set Up, Build and Run
 
-1. 	- Download Eclipse Mars at https://eclipse.org/downloads/ and install and then open.	
-	- Clone Git repo
-	- Switch your Eclipse workspace to the parent of the folder you cloned into
-	- Then go -> File -> New -> Project
-	- Select 'Java Project' click next
-	- Enter 'dita-to-pdf-with-eclipse' in the Project Name field
-	- Un-check location checkbox and enter in the parent folder of the project. In project layout select -> 'Use project folder as root for sources and class files' radio button and then click next.
-	- on the next screen just click 'Finish'
-	- You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to 'libs/DITA-OT1.8.5/lib' and add all the JAR files from that directory.  Click add JARS again and add 'saxon9he.jar' from  'libs/SaxonHE9-6-0-7J'.  Make sure to click Apply and then click Ok.
+######Download Eclipse 
+
+Go to https://eclipse.org/downloads/ 
+
+![Eclipse Dowloads](documentation/images/eclipse_downloads1.png)
+
+Before you install Eclipse you should check the checksum of the Eclipse file.
+
+Depending on which type of checksum you choose: MD5, SHA1, SHA-512 the commands are slightly different:
+
+First you should click on the checksum type in the image below:
+
+![Eclipse checksums](documentation/images/eclipse_checksums.png)
+
+I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: shasum -a 512 filename
+
+You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.
+
+For more information on the shasum or md5 command open a terminal and type -> man shasum  or man md5.
 	
-2.  - Right click on build.xml and select -> Run As -> Ant Build -> (first one)
-	- This should run and build and use as input both the DITA XML in the 'dita-test-files/debrief/' folder and the three ditamap's from the 'libs/DITA-OT1.8.5/samples' directory and will produce four PDF's in the  'output' sub folders 'output/debrief/pdf' and 'output/samples/pdf' folder.
-	- Transformation and rendering (printing) occur in this step and the 'info.debrief' custom DITA-OT plugin produces a custom designed PDF via the DITA-OT base libraries, an XSL - Formatting Objects Processor (FO Processor) and the transformation engine SaxonHE.  The other plugin 'sample' is a vanilla plugin with very little customization that makes the three sample PDF's.
-	- I used Apache FOP 2.0 for the FO Processor, DITA-OT 1.8.5 and SaxonHE9-6-0-7J from Saxonica as the transformation engine 
+Now you can install Eclipse and then open.	
+
+######Clone GitHub repository
+
+Switch your Eclipse workspace to the parent of the folder you cloned into
+
+Then go -> File -> New -> Project
+
+Select 'Java Project' click next
+
+Enter 'dita-to-pdf-with-eclipse' in the Project Name field
+
+Un-check location checkbox and enter in the parent folder of the project. In project layout select -> 'Use project folder as root for sources and class files' radio button and then click next.
+
+On the next screen just click 'Finish'
+
+You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to 'libs/DITA-OT1.8.5/lib' and add all the JAR files from that directory.  Click add JARS again and add 'saxon9he.jar' from  'libs/SaxonHE9-6-0-7J'.  Make sure to click Apply and then click Ok.
+	
+######Build and run project	
+	
+Right click on build.xml and select -> Run As -> Ant Build -> (first one)
+
+This should run and build and use as input both the DITA XML in the 'dita-test-files/debrief/' folder and the three ditamap's from the 'libs/DITA-OT1.8.5/samples' directory and will produce four PDF's in the  'output' sub folders 'output/debrief/pdf' and 'output/samples/pdf' folder.
+
+Transformation and rendering (printing) occur in this step and the 'info.debrief' custom DITA-OT plugin produces a custom designed PDF via the DITA-OT base libraries, an XSL - Formatting Objects Processor (FO Processor) and the transformation engine SaxonHE.  The other plugin 'sample' is a vanilla plugin with very little customization that makes the three sample PDF's.
+
+I used Apache FOP 2.0 for the FO Processor, DITA-OT 1.8.5 and SaxonHE9-6-0-7J from Saxonica as the transformation engine 
 
 	
 
@@ -52,6 +85,9 @@ Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all t
  
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
 
+
+
+##List of technologies used on this GitHub project	
 	
 Eclipse - https://eclipse.org/ 
 
