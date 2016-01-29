@@ -87,7 +87,7 @@ Placing the custom code only in these two files follows best practice techniques
 
 
 
-##List of technologies used on this GitHub project	
+##List of resources and technologies used on this GitHub project
 	
 Eclipse - https://eclipse.org/ 
 
@@ -152,3 +152,5 @@ Mastering Markdown - https://guides.github.com/features/mastering-markdown/
 GitHub Desktop - https://desktop.github.com/
 
 Microsoft File Checksum Integrity Verifier - https://www.microsoft.com/en-au/download/details.aspx?id=11533
+
+TechSmith Camtasia - https://www.techsmith.com/camtasia.html
