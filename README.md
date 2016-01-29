@@ -1,4 +1,4 @@
-# DITA TO PDF WITH ECLIPSE
+#DITA TO PDF WITH ECLIPSE
 This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XSL and XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
 This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin using Apache Ant.  Using PDF allows us to print a nicely formated documents on paper. Using Eclipse generating the PDF output can be done in one click by building the project and this creates a publishing pipeline making all the different PDF's one after the other.
@@ -14,7 +14,7 @@ I should be adding more samples soon.
 
 ##Project Set Up, Build and Run
 
-######Download Eclipse 
+###Download Eclipse 
 
 Go to https://eclipse.org/downloads/ 
 
@@ -36,7 +36,7 @@ For more information on the shasum or md5 command open a terminal and type -> ma
 	
 Now you can install Eclipse and then open.	
 
-######Clone GitHub repository
+###Clone GitHub repository
 
 Switch your Eclipse workspace to the parent of the folder you cloned into
 
@@ -52,7 +52,7 @@ On the next screen just click 'Finish'
 
 You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to 'libs/DITA-OT1.8.5/lib' and add all the JAR files from that directory.  Click add JARS again and add 'saxon9he.jar' from  'libs/SaxonHE9-6-0-7J'.  Make sure to click Apply and then click Ok.
 	
-######Build and run project	
+###Build and run project	
 	
 Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 
