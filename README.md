@@ -97,6 +97,8 @@ Apache FOP - https://xmlgraphics.apache.org/fop/
 
 Apache ANT - http://ant.apache.org
 
+Saxon XSLT - https://en.wikipedia.org/wiki/Saxon_XSLT
+
 Saxon - http://saxon.sourceforge.net/
 
 Saxonica - http://www.saxonica.com/welcome/welcome.xml
@@ -166,3 +168,7 @@ sha1sum - https://en.wikipedia.org/wiki/Sha1sum
 IDE - Integrated Development Environment - https://en.wikipedia.org/wiki/Integrated_development_environment
 
 Git (software) - https://en.wikipedia.org/wiki/Git_(software)
+
+man page - https://en.wikipedia.org/wiki/Man_page
+
+Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
