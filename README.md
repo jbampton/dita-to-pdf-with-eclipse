@@ -56,6 +56,8 @@ You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Pr
 	
 Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 
+![Run the build](documentation/images/ant/dita_ant_build.png)
+
 This should run and build and use as input both the DITA XML in the 'dita-test-files/debrief/' folder and the three ditamap's from the 'libs/DITA-OT1.8.5/samples' directory and will produce four PDF's in the  'output' sub folders 'output/debrief/pdf' and 'output/samples/pdf' folder.
 
 Transformation and rendering (printing) occur in this step and the 'info.debrief' custom DITA-OT plugin produces a custom designed PDF via the DITA-OT base libraries, an XSL - Formatting Objects Processor (FO Processor) and the transformation engine SaxonHE.  The other plugin 'sample' is a vanilla plugin with very little customization that makes the three sample PDF's.
