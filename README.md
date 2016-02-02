@@ -18,7 +18,7 @@ I should be adding more samples soon.
 
 Go to https://eclipse.org/downloads/ 
 
-![Eclipse Dowloads](documentation/images/eclipse_downloads1.png)
+![Eclipse Dowloads](documentation/images/eclipse/eclipse_downloads1.png)
 
 Before you install Eclipse you should check the checksum of the Eclipse file.
 
@@ -26,14 +26,24 @@ Depending on which type of checksum you choose: MD5, SHA1, SHA-512 the commands 
 
 First you should click on the checksum type in the image below:
 
-![Eclipse checksums](documentation/images/eclipse_checksums.png)
+![Eclipse checksums](documentation/images/eclipse/eclipse_checksums.png)
 
 I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: shasum -a 512 filename
 
-You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.
+You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.  You can select the text in the terminal and then copy it and then find it on the Eclipse website.
 
-For more information on the shasum or md5 command open a terminal and type -> man shasum  or man md5.
-	
+For more information on the shasum or md5 command open a terminal and type:
+
+####man shasum  
+![man shasum](documentation/images/man/man_shasum.png)
+
+####man md5
+![man md5](documentation/images/man/man_md5.png)
+
+Use the up and down arrows on the keyboard to navigate through the man page documentation.
+
+To exit from the man pages type: q
+
 Now you can install Eclipse and then open.	
 
 ###Clone GitHub repository
