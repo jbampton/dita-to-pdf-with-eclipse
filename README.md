@@ -50,9 +50,7 @@ Now you can install Eclipse and then open.
 
 Switch your Eclipse workspace to the parent of the folder you cloned into
 
-Then go -> File -> New -> Project
-
-Select 'Java Project' click next
+Then go -> File -> New -> Java Project -> click next
 
 Enter 'dita-to-pdf-with-eclipse' in the Project Name field
 
