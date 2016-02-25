@@ -16,6 +16,8 @@ If you are not already Gung-Ho on Java and all things tech, then try a few short
 - https://www.codeschool.com/courses/try-git
 - https://www.codecademy.com/learn/learn-git
 
+And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become faster, stronger and more powerful......JEDI MASTER LEVEL.....!??!?!!  
+
 So now that you are the new Java Chuck Norris on the block, come and let's build.
 
 ##Project Set Up, Build and Run
