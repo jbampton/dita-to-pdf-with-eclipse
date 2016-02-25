@@ -1,5 +1,5 @@
 #DITA TO PDF WITH ECLIPSE
-This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XSL and XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
+This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java ([Apache FOP](https://xmlgraphics.apache.org/fop/), [Saxon](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [DITA Open Toolkit](http://www.dita-ot.org/), [Apache ANT](http://ant.apache.org/), Eclipse) and it also uses [XSL](https://www.w3.org/Style/XSL/) and [XML](https://www.w3.org/XML/) heavily.   Development was originally done in [oXygen XML Editor](https://www.oxygenxml.com/) then ported to Eclipse.
 
 This project takes DITA XML as input and transforms it to PDF with the DITA Open Toolkit and a custom made plugin using Apache Ant.  Using PDF allows us to print a nicely formated documents on paper. Using Eclipse generating the PDF output can be done in one click by building the project and this creates a publishing pipeline making all the different PDF's one after the other.
 
@@ -9,8 +9,12 @@ The Roadmap for this project is to make this into an easy to follow tutorial on 
 
 The 'info.debrief' plugin has been extracted from another open source project I worked on. The other 'sample' plugin is a vanilla plugin that i created online on a DITA-OT plugin customization site.  
 
-I should be adding more samples soon.
+If you are not already Gung-Ho on Java and all things tech, then try a few short online courses:
 
+- https://www.codecademy.com/learn/learn-java
+- https://www.codecademy.com/learn/learn-the-command-line
+- https://www.codeschool.com/courses/try-git
+- https://www.codecademy.com/learn/learn-git
 
 ##Project Set Up, Build and Run
 
