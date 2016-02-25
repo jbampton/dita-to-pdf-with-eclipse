@@ -54,6 +54,20 @@ To exit from the man pages type: q
 
 Now you can install Eclipse and then open.	
 
+
+###Install GitHub Desktop
+
+The build's repository is found within GitHub, and the "GitHub Desktop" application will allow you to clone and work on the build more easily, while retaining a link to the primary source, and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.
+
+Go to: [GitHub Desktop](https://desktop.github.com/)
+
+Click on the "Download GitHub Desktop" button.
+
+Unzip the resulting file: GitHub Desktop 216.zip
+
+This expands to: GitHub Desktop
+
+
 ###Clone GitHub repository
 
 Switch your Eclipse workspace to the parent of the folder you cloned into
