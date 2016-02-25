@@ -117,6 +117,17 @@ Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all t
  
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
 
+##Homebrew usage
+
+[Homebrew](http://brew.sh) is an amazing package management system that installs the stuff you need that Apple didn't.
+
+[Homebrew Formula](http://brewformulas.org) are written in Ruby.
+
+A made a [video on Homebrew](https://www.youtube.com/watch?v=IonWEFStPio) which runs for under minute that shows the typical brew update command.
+
+If you install Homebrew you should try to run brew update daily.
+
+Once you have installed Homebrew you can run through the basic commands below.
 
 
 ##List of resources and technologies used on this GitHub project
