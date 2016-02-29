@@ -57,7 +57,11 @@ First you should click on the checksum type in the image below:
 
 ![Eclipse checksums](documentation/images/eclipse/eclipse_checksums.png)
 
-I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: shasum -a 512 filename
+I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: 
+
+###shasum -a 512 filename
+
+![shasum](documentation/images/terminal/example_shasum.png)
 
 You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.  You can select the text in the terminal and then copy it and then find it on the Eclipse website.
 
