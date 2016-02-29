@@ -137,6 +137,10 @@ If you install Homebrew you should try to run brew update daily.
 
 Once you have installed Homebrew you can run through the basic commands below.
 
+###brew -v
+
+![brew -v](documentation/images/homebrew/brew-v.png)
+
 ###man brew
 ![man brew](documentation/images/man/man_brew.png)
 
