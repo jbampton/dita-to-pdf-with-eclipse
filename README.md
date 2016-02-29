@@ -45,9 +45,13 @@ If it's installed you can read up about Java more by typing:
 
 ###Download Eclipse 
 
-Go to https://eclipse.org/downloads/ 
+Go to: [Eclipse Downloads](https://www.eclipse.org/downloads/?osType=macosx)
 
-![Eclipse Dowloads](documentation/images/eclipse/eclipse_downloads1.png)
+![Eclipse Downloads](documentation/images/eclipse/download_eclipse.png)
+
+In the box near top labelled "Try the Eclipse Installer", click on "64 bit" under "Mac OS X".
+
+Download Eclipse installer application.
 
 Before you install Eclipse you should check the checksum of the Eclipse file.
 
