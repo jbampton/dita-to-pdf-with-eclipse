@@ -82,9 +82,11 @@ Now you can install Eclipse and then open.
 
 ###Install GitHub Desktop
 
-The build's repository is found within GitHub, and the "GitHub Desktop" application will allow you to clone and work on the build more easily, while retaining a link to the primary source, and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.
+The build's repository is found within GitHub, and the "GitHub Desktop" application will allow you to clone and work on the build more easily, while retaining a link to the primary source, and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.  GitHub Desktop is currently available for both OS X and Windows.
 
 Go to: [GitHub Desktop](https://desktop.github.com/)
+
+![GitHub Desktop](documentation/images/github/github_desktop.png)
 
 Click on the "Download GitHub Desktop" button.
 
