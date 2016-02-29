@@ -127,7 +127,7 @@ Placing the custom code only in these two files follows best practice techniques
 
 ##Homebrew usage
 
-[Homebrew](http://brew.sh) is an amazing package management system that installs the stuff you need that Apple didn't.
+[Homebrew](http://brew.sh) is an amazing package management system for OS X that installs the stuff you need that Apple didn't.
 
 [Homebrew Formula](http://brewformulas.org) are written in Ruby.
 
@@ -136,6 +136,23 @@ A made a [video on Homebrew](https://www.youtube.com/watch?v=IonWEFStPio) which 
 If you install Homebrew you should try to run brew update daily.
 
 Once you have installed Homebrew you can run through the basic commands below.
+
+###man brew
+![man brew](documentation/images/man/man_brew.png)
+
+**Before using Homebrew you should ensure it's up to date. Run the next command:**
+
+###brew doctor
+![brew doctor](documentation/images/homebrew/brew_doctor.png)
+
+###brew update
+![brew update](documentation/images/homebrew/brew_update.png)
+
+###Example output of running a brew install command.  The image shows pouring brews from their bottles
+![pouring brews](documentation/images/homebrew/pouring_brews.png)
+
+###brew list
+![brew list](documentation/images/homebrew/brew_list.png)
 
 
 ##List of resources and technologies used on this GitHub project
