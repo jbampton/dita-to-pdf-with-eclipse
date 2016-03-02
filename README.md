@@ -140,6 +140,10 @@ Unzip the resulting file: GitHub Desktop 216.zip
 
 This expands to: GitHub Desktop
 
+Move this to your system's Applications directory.
+
+![Applications directory](documentation/images/osx/applications_folder.png)
+
 
 ###Clone GitHub repository
 
