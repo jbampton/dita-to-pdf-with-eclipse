@@ -84,16 +84,7 @@
   <import file="plugins/org.dita.troff/build_dita2troff.xml"/>
 
   <import file="plugins/org.dita.wordrtf/build_dita2wordrtf.xml"/>
-
-  <target name="dita2sample.init">
-    <property location="${dita.plugin.sample.dir}/cfg" name="customization.dir"/>
-    <property name="args.chapter.layout" value="MINITOC"/>
-    <property name="args.bookmark.style" value="EXPANDED"/>
-    <property name="args.gen.task.lbl" value="True"/>
-    <property name="args.fo.include.rellinks" value="none"/>
-  </target>
-  <target depends="dita2sample.init, dita2pdf2" name="dita2sample"/>
-  
+<target name="dita2sample.init"><property location="${dita.plugin.sample.dir}/cfg" name="customization.dir"/><property name="pdf2.i18n.skip" value="true"/><property location="${dita.plugin.sample.dir}/xsl/fo/topic2fo_shell_fop.xsl" name="args.xsl.pdf"/><property name="args.chapter.layout" value="MINITOC"/><property name="args.bookmark.style" value="COLLAPSED"/><property name="args.fo.include.rellinks" value="none"/></target><target depends="dita2sample.init, dita2pdf2" name="dita2sample"/>  
   
 
   <target name="dita2tocjs" depends="build-init, preprocess, tocjsInit, map2tocjs, topic2tocjs, tocjsDefaultOutput">

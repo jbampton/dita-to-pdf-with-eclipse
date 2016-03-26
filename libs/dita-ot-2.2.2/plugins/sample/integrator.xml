@@ -1,11 +1,2 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<project name="sample">
-  <target name="dita2sample.init">
-    <property location="${dita.plugin.sample.dir}/cfg" name="customization.dir" />
-    <property name="args.chapter.layout" value="MINITOC" />
-    <property name="args.bookmark.style" value="EXPANDED" />
-    <property name="args.gen.task.lbl" value="True" />
-    <property name="args.fo.include.rellinks" value="none" />
-  </target>
-  <target depends="dita2sample.init, dita2pdf2" name="dita2sample" />
-</project>
+<?xml version='1.0' encoding='utf-8'?>
+<project name="sample"><target name="dita2sample.init"><property location="${dita.plugin.sample.dir}/cfg" name="customization.dir" /><property name="pdf2.i18n.skip" value="true" /><property location="${dita.plugin.sample.dir}/xsl/fo/topic2fo_shell_fop.xsl" name="args.xsl.pdf" /><property name="args.chapter.layout" value="MINITOC" /><property name="args.bookmark.style" value="COLLAPSED" /><property name="args.fo.include.rellinks" value="none" /></target><target depends="dita2sample.init, dita2pdf2" name="dita2sample" /></project>

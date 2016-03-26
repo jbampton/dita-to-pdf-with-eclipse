@@ -134,12 +134,7 @@
     <feature extension="dita.xsl.eclipse.plugin" file="xsl/map2plugin.xsl"/>
     <feature extension="dita.conductor.target" file="script.xml"/>
     <feature extension="dita.map.eclipse.index.pre" type="text" value="dita.index.eclipsehelp.init"/> 
-  </plugin><plugin id="sample" xml:base="../plugins/sample/plugin.xml">
-  <require plugin="org.dita.pdf2"/>
-  <feature extension="dita.conductor.transtype.check" value="sample"/>
-  <feature extension="dita.transtype.print" value="sample"/>
-  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
-</plugin><plugin id="org.dita.html5" xml:base="../plugins/org.dita.html5/plugin.xml">
+  </plugin><plugin id="sample" xml:base="../plugins/sample/plugin.xml"><require plugin="org.dita.pdf2"/><feature extension="dita.conductor.transtype.check" value="sample"/><feature extension="dita.transtype.print" value="sample"/><feature extension="dita.conductor.target.relative" file="integrator.xml"/></plugin><plugin id="org.dita.html5" xml:base="../plugins/org.dita.html5/plugin.xml">
   <require plugin="org.dita.xhtml"/>
   <!-- extension points -->
   <extension-point id="dita.xsl.html5" name="HTML/XHTML XSLT import"/>
