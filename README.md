@@ -174,13 +174,12 @@ Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 
 ![Run the build](documentation/images/ant/dita_ant_build.png)
 
-This should run and build and use as input both the DITA XML in the 'dita-test-files/debrief/' folder and the three ditamap's from the 'libs/DITA-OT1.8.5/samples' directory and will produce four PDF's in the  'output' sub folders 'output/debrief/pdf' and 'output/samples/pdf' folder.
+This should run and build and use as input both the DITA XML in the 'dita-test-files/debrief/' folder and the three ditamap's from the 'libs/dita-ot-2.2.2/samples' directory and will produce four PDF's in the  'output' sub folders 'output/debrief/pdf' and 'output/samples/pdf' folder.
 
 Transformation and rendering (printing) occur in this step and the 'info.debrief' custom DITA-OT plugin produces a custom designed PDF via the DITA-OT base libraries, an XSL - Formatting Objects Processor (FO Processor) and the transformation engine SaxonHE.  The other plugin 'sample' is a vanilla plugin with very little customization that makes the three sample PDF's.
 
-I used Apache FOP 2.0 for the FO Processor, DITA-OT 1.8.5 and SaxonHE9-6-0-7J from Saxonica as the transformation engine 
+I used Apache FOP 2.1 for the FO Processor and Saxon for the transformation engine that came bundled with DITA-OT 2.2.2. 
 
-	
 
 ##How DITA-OT PDF Plugins work
 
@@ -190,7 +189,7 @@ When ready a plugin must be integrated into DITA-OT using Apache Ant. I built th
  
 To integrate a new plugin on the command line from inside the root DITA-OT folder it would be -> ant -f integrator.xml
 
-You can also run the integrator inside Eclipse as an Ant build by right clicking on '/libs/DITA-OT1.8.5/integrator.xml' and selecting -> Run As -> Ant Build and this should integrate the plugin with the toolkit.
+You can also run the integrator inside Eclipse as an Ant build by right clicking on '/libs/dita-ot-2.2.2/integrator.xml' and selecting -> Run As -> Ant Build and this should integrate the plugin with the toolkit.
 
 Every plugin has a 'transtype' -> the two transtype's are 'debrief' and 'sample'
 
@@ -199,7 +198,7 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.
 
 The two main files that configure plugins are plugin.xml and integrator.xml which should be in the root of the plugin folder.  The 'cfg' folder contains the rest of the customization.
 
-Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory. 
+Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'libs/dita-ot-2.2.2/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory. 
  
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
 
