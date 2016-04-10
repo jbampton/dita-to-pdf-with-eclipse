@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<plugin id="sample">
-  <require plugin="org.dita.pdf2" />
-  <feature extension="dita.conductor.transtype.check" value="sample" />
-  <feature extension="dita.transtype.print" value="sample" />
-  <feature extension="dita.conductor.target.relative" file="integrator.xml" />
-</plugin>
