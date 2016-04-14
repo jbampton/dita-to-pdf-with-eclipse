@@ -5,7 +5,7 @@ This project takes DITA XML as input and transforms it to [PDF](https://acrobat.
 
 [Darwin Information Typing Architecture](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture) (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the [OASIS](https://en.wikipedia.org/wiki/OASIS_(organization)) DITA Technical Committee. Some of the largest and most successful companies in the world use DITA. The next link is an informal list of [companies using DITA](http://www.ditawriter.com/companies-using-dita/).
 
-The Roadmap for this project is to make this into an easy to follow tutorial on how to build and customize DITA-OT PDF plugins and publish your DITA content using Eclipse.  There maybe an attempt at building DITA-OT PDF plugins using newer versions of DITA-OT. 
+The Roadmap for this project is to make this into an easy to follow tutorial on how to build and customize DITA-OT PDF plugins and publish your DITA content using Eclipse.   I am currently using DITA-OT 2.2.2 and I am aiming at keeping the 'info.debrief' plugin compatible with the current version of DITA-OT. 
 
 The 'info.debrief' plugin has been extracted from another open source project I worked on. The other 'sample' plugin is a vanilla plugin that i created online on a DITA-OT plugin customization site.  
 
