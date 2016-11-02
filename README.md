@@ -20,6 +20,7 @@ And then come train in the [REAL DOJO](http://www.codewars.com) and reach your h
 
 So now that you are the new Java [Chuck Norris](https://en.wikipedia.org/wiki/Chuck_Norris) on the block, come and let's build.
 
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 ##Build Instructions - Mac OS X
 
