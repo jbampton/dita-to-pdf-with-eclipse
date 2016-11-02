@@ -53,6 +53,7 @@ If it's installed you can read up about Java more by typing:
 
 ![man java](documentation/images/man/man-java.png)
 
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 ###Download Eclipse 
 
@@ -92,6 +93,7 @@ Use the up and down arrows on the keyboard to navigate through the man page docu
 
 To exit from the man pages type: q
 
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 ###Install Eclipse
 
@@ -135,6 +137,7 @@ Launch Eclipse for the first time. Doing so will ask you to Select a "workspace.
 
 Quit Eclipse for now.	
 
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 ###Install GitHub Desktop
 
@@ -154,6 +157,7 @@ Move this to your system's Applications directory.
 
 ![Applications directory](documentation/images/osx/applications_folder.png)
 
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 ###Clone GitHub repository
 
@@ -168,7 +172,9 @@ Un-check location checkbox and enter in the parent folder of the project. In pro
 On the next screen just click 'Finish'
 
 You must add the JAR files from DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to 'libs/dita-ot-2.2.2/lib' and add all the JAR files from that directory.  Make sure to click Apply and then click Ok.
-	
+
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
+
 ###Build and run project	
 	
 Right click on build.xml and select -> Run As -> Ant Build -> (first one)
@@ -181,6 +187,7 @@ Transformation and rendering (printing) occur in this step and the 'info.debrief
 
 I used Apache FOP 2.1 for the FO Processor and Saxon for the transformation engine that came bundled with DITA-OT 2.2.2. 
 
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 ##How DITA-OT PDF Plugins work
 
@@ -202,6 +209,8 @@ The two main files that configure plugins are plugin.xml and integrator.xml whic
 Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'libs/dita-ot-2.2.2/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory. 
  
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
+
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 ##Homebrew usage
 
@@ -235,6 +244,8 @@ Once you have installed Homebrew you can run through the basic commands below.
 
 ###brew list
 ![brew list](documentation/images/homebrew/brew_list.png)
+
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 
 ##List of resources and technologies used on this GitHub project
@@ -323,6 +334,7 @@ man page - https://en.wikipedia.org/wiki/Man_page
 
 Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
 
+[&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 ##License
 
@@ -330,5 +342,4 @@ The DITA Open Toolkit and Apache FOP are licensed for use under the the Apache S
 
 Saxon uses the Mozilla Public License Version 2.0.
 
-
-[Back to top](#dita-to-pdf-with-eclipse)
+[&#8593;](#dita-to-pdf-with-eclipse)
