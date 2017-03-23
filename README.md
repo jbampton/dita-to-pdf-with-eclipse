@@ -1,4 +1,5 @@
-#DITA TO PDF WITH ECLIPSE
+# DITA TO PDF WITH ECLIPSE
+
 This program runs inside [Eclipse](https://www.eclipse.org/), an [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) and is mainly a [Java](http://www.oracle.com/technetwork/java/index.html) based project in that all the code libraries use Java ([Apache FOP](https://xmlgraphics.apache.org/fop/), [Saxon](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [DITA Open Toolkit](http://www.dita-ot.org/), [Apache ANT](http://ant.apache.org/)) and it also uses [XSL](https://www.w3.org/Style/XSL/) and [XML](https://www.w3.org/XML/) heavily.   Development was originally done in [oXygen XML Editor](https://www.oxygenxml.com/) then ported to Eclipse.  Java is now ranked first on the [TIOBE Index](http://www.tiobe.com/tiobe_index).
 
 This project takes DITA XML as input and transforms it to [PDF](https://acrobat.adobe.com/au/en/products/about-adobe-pdf.html) with the DITA Open Toolkit and a custom made plugin using Apache Ant.  Using PDF allows us to print a nicely formated documents on paper. Using Eclipse generating the PDF output can be done in one click by building the project and this creates a publishing pipeline making all the different PDF's one after the other.
@@ -22,15 +23,15 @@ So now that you are the new Java [Chuck Norris](https://en.wikipedia.org/wiki/Ch
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-##Build Instructions - Mac OS X
+## Build Instructions - Mac OS X
 
-###Install Java
+### Install Java
 
 First you should check if Java is already installed on your system. 
 
 In a terminal type the following commands:
 
-####java
+#### java
 
 If Java is installed you will see the Java help message like the image below.
 
@@ -44,18 +45,18 @@ Choose the JDK version for your [Operating System](https://en.wikipedia.org/wiki
 
 If it's installed you can read up about Java more by typing:
 
-####java -version
+#### java -version
 
 ![java -version](documentation/images/java/java-version.png)
 
 
-####man java
+#### man java
 
 ![man java](documentation/images/man/man-java.png)
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-###Download Eclipse 
+### Download Eclipse 
 
 Go to: [Eclipse Downloads](https://www.eclipse.org/downloads/?osType=macosx)
 
@@ -75,7 +76,7 @@ First you should click on the checksum type in the image below:
 
 I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: 
 
-###shasum -a 512 filename
+### shasum -a 512 filename
 
 ![shasum](documentation/images/terminal/example_shasum.png)
 
@@ -83,10 +84,10 @@ You should check the output of the shasum command matches what's displayed on th
 
 For more information on the shasum or md5 command open a terminal and type:
 
-####man shasum  
+#### man shasum  
 ![man shasum](documentation/images/man/man_shasum.png)
 
-####man md5
+#### man md5
 ![man md5](documentation/images/man/man_md5.png)
 
 Use the up and down arrows on the keyboard to navigate through the man page documentation.
@@ -95,7 +96,7 @@ To exit from the man pages type: q
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-###Install Eclipse
+### Install Eclipse
 
 Unzip resulting download (eclipse-inst-mac64.tar.gz) by double-clicking on it if downloader did not already unzip it.
 
@@ -139,7 +140,7 @@ Quit Eclipse for now.
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-###Install GitHub Desktop
+### Install GitHub Desktop
 
 The build's repository is found within GitHub, and the "GitHub Desktop" application will allow you to clone and work on the build more easily, while retaining a link to the primary source, and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.  GitHub Desktop is currently available for both OS X and Windows.
 
@@ -159,7 +160,7 @@ Move this to your system's Applications directory.
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-###Clone GitHub repository
+### Clone GitHub repository
 
 Switch your Eclipse workspace to the parent of the folder you cloned into
 
@@ -175,7 +176,7 @@ You must add the JAR files from DITA-OT to Ant inside Eclipse. Go Preferences ->
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-###Build and run project	
+### Build and run project	
 	
 Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 
@@ -189,7 +190,7 @@ I used Apache FOP 2.1 for the FO Processor and Saxon for the transformation engi
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-##How DITA-OT PDF Plugins work
+## How DITA-OT PDF Plugins work
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief' and the auto built vanilla plugin named 'sample'.
 
@@ -212,7 +213,7 @@ Placing the custom code only in these two files follows best practice techniques
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-##Homebrew usage
+## Homebrew usage
 
 [Homebrew](http://brew.sh) is an amazing package management system for OS X that installs the stuff you need that Apple didn't.
 
@@ -224,31 +225,31 @@ If you install Homebrew you should try to run brew update daily.
 
 Once you have installed Homebrew you can run through the basic commands below.
 
-###brew -v
+### brew -v
 
 ![brew -v](documentation/images/homebrew/brew-v.png)
 
-###man brew
+### man brew
 ![man brew](documentation/images/man/man_brew.png)
 
 **Before using Homebrew you should ensure it's up to date. Run the next command:**
 
-###brew doctor
+### brew doctor
 ![brew doctor](documentation/images/homebrew/brew_doctor.png)
 
-###brew update
+### brew update
 ![brew update](documentation/images/homebrew/brew_update.png)
 
-###Example output of running a brew install command.  The image shows pouring brews from their bottles
+### Example output of running a brew install command.  The image shows pouring brews from their bottles
 ![pouring brews](documentation/images/homebrew/pouring_brews.png)
 
-###brew list
+### brew list
 ![brew list](documentation/images/homebrew/brew_list.png)
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
 
-##List of resources and technologies used on this GitHub project
+## List of resources and technologies used on this GitHub project
 	
 Eclipse - https://eclipse.org/ 
 
@@ -336,7 +337,7 @@ Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
 
 [&#8593;](#dita-to-pdf-with-eclipse) [&#8595;](#license)
 
-##License
+## License
 
 The DITA Open Toolkit and Apache FOP are licensed for use under the the Apache Software Foundation License v2.0.
 
